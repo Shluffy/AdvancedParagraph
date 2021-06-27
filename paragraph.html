@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html>
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <title>Random JS - Paragraph Stuff</title>
 
 <body>
-
+<div="container">
 <h2>Random JS - Adding To A Paragraph</h2>
+<center>
+<p id="controls">
+<button onclick = "add()">Add To Paragraph</button>
+  <button onclick = "replace()">Replace Paragraph's Content</button> 
+  <button onclick = "clear()">Clear Paragraph</button>
+</p>
+  
+<p id="para"></p>
 
-<p id="demo"></p>
-
+  </center>
+  
 <script>
+let p = document.getElementById("para");
+// Add To paragraph
+function add() {
 let text = prompt("Text:");
-let p = document.getElementById("demo");
 p.innerHTML += text;
+}
+//Replace
+function replace() {
+let text = prompt("Text:");
+p.innerHTML = text;
+}
+//Clear
+function clear() {
+p.innerHTML = "";
+}
+  
+  
+  
 </script>
-
+</div>
 </body>
 </html>
