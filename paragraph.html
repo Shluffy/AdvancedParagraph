@@ -11,7 +11,7 @@
 <p id="controls">
 <button onclick = "add()">Add To Paragraph</button>
   <button onclick = "replace()">Replace Paragraph's Content</button> 
-  <button onclick = "clear()">Clear Paragraph</button>
+  <button onclick = "remove()">Clear Paragraph</button>
   
 </p>
   
@@ -32,7 +32,7 @@ let text = prompt("Text:");
 p.innerHTML = text;
 }
 //Clear
-function clear() {
+function remove() {
 p.innerHTML = "";
 //Debugging
 alert("Making way to function");
