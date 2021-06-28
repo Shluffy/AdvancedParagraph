@@ -1,0 +1,14 @@
+/* This makes the site always in dark mode */
+body { 
+  background-color: black; 
+  color: white;
+}
+
+/* Link Coloring */
+body a {
+  color: blue;
+}
+body a:hover {
+  color: red;
+}
+
