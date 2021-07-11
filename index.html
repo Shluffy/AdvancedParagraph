@@ -13,16 +13,14 @@
   <h2>Random Code JS - Adding To A Paragraph</h2>
   <br><br>
 <p id="controls">
-<button onclick = "add()">Add To Paragraph</button>
-  <button onclick = "replace()">Replace Paragraph's Content</button> 
-  <button onclick = "remove()">Clear Paragraph</button>
-  
+  <button onclick = "controls(false, 'add')">Add To Paragraph</button>
+  <button onclick = "controls(false, 'replace')">Replace Paragraph's Content</button>
+  <button onclick = "controls(false, 'remove')">Clear Paragraph</button>
 </p>
-  
-<p id="para"></p>
 
+<p id="para"></p>
   </center>
-  
+
 <script>
 let p = document.getElementById("para");
 // Add To paragraph
@@ -39,22 +37,31 @@ p.innerHTML = text;
 function remove() {
 p.innerHTML = "";
 }
-/* 
+/*
 Controls function:
 censor: if the censor is on or off
 control: what should be done (clear, replace, etc)
 */
-function controls (censor, control) {
-switch (censor){
-  case true:
-    switch (control){
-    
+function controls(censor, control) {
+
+  let text = "";
+  switch (control){
+      case "add":
+        text = prompt("Text:");
+        p.innerHTML += text;
+        break;
+      case "replace":
+        text = prompt("Text:");
+        p.innerHTML = text;
+        break;
+      case "remove":
+        p.innerHTML = "";
+        break;
+      default:
+        break;
     }
-    break;
-  case false:
 }
-}
-  
+
 </script>
 </div>
 </body>
