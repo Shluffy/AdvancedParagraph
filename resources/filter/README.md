@@ -1,3 +1,5 @@
+## Warning: Files Beyond this contain profanity. Do not wander beyond these files if you do not wish to see profanity.
+
 # Filter Information
 
 ## Functions
