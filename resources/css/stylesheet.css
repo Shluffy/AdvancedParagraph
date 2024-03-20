@@ -9,6 +9,10 @@ body {
   margin-right: 50; */
 }
 
+p {
+  margin: 25px 50px;
+}
+
 /* Link Coloring */
 body a {
   color: blue;
