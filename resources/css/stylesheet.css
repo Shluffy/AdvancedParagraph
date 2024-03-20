@@ -1,11 +1,12 @@
 /* This makes the site always in dark mode */
+/* Margin is for a margin */
 body { 
   background-color: black; 
   color: white;
-  margin-top: 25;
-  margin-bottom: 25;
-  margin-left: 25;
-  margin-right: 25;
+  margin-top: 50;
+  margin-bottom: 50;
+  margin-left: 50;
+  margin-right: 50;
 }
 
 /* Link Coloring */
